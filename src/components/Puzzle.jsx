@@ -15,7 +15,7 @@ const Puzzle = () => {
             h-[500px]
             xl:mt-[15vh]
             l:mt-[10vh]
-            mt-[20vh]
+            mt-[15vh]
             puzzle
         '
     >

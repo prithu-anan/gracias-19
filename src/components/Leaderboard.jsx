@@ -26,7 +26,7 @@ const Leaderboard = () => {
                 justify-center 
                 items-center 
                 w-[90vw]
-                h-[80vh]
+                h-[70vh]
             '
         >
             <CustomizedTables />

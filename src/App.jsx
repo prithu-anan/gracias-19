@@ -23,9 +23,9 @@ function App() {
           <Link to='/'><p>Gracias 19</p></Link>
         </div>
         <div className='flex w-[70vw] justify-end'>
-          <Link to='/leaderboard'><p className='xs:mx-5 mx-2 hover:text-yellow-300'>Leaderboard</p></Link>
-          <Link to='/puzzle'><p className='xs:mx-5 mx-2 hover:text-yellow-300'>Puzzle</p></Link>
-          <Link to={localStorage.getItem('username') ? '/' : '/login'}>
+          <Link to={isLoggedIn ? '/leaderboard' : '/login'}><p className='xs:mx-5 mx-2 hover:text-yellow-300'>Leaderboard</p></Link>
+          <Link to={isLoggedIn ? '/puzzle' : '/login'}><p className='xs:mx-5 mx-2 hover:text-yellow-300'>Puzzle</p></Link>
+          <Link to={isLoggedIn ? '/' : '/login'}>
             <p onClick={handleLogout} className='xs:mx-5 mx-2 hover:text-yellow-300'>
               {isLoggedIn ? 'Logout' : 'Login'}  
             </p>

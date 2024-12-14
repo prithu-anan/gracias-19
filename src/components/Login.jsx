@@ -23,7 +23,10 @@ const Login = ({ setIsLoggedIn }) => {
             items-center 
             xl:w-[20vw]
             l:w-[40vw]
-            w-[70vw]   
+            w-[70vw]
+            xl:h-[35vh]
+            l:h-[35vh]
+            h-[300px]   
             login
         '
     >

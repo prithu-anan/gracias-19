@@ -12,7 +12,7 @@ const Puzzle = () => {
             w-[70vw] 
             xl:h-[70vh]  
             l:h-[70vh]
-            h-[55vh]
+            h-[500px]
             xl:mt-[15vh]
             l:mt-[10vh]
             mt-[20vh]

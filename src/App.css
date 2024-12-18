@@ -8,6 +8,7 @@
     /* border-bottom: 1px solid #e9ecef; */
     padding: 0.5rem 1rem;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    width: 100%;
 }
 
 .login{
@@ -19,7 +20,7 @@
     /* cursor: pointer; */
     /* height: 35vh; */
     /* width: 20vw; */
-    justify-self: center;
+    /* justify-content: center; */
     margin-top: 25vh;
 }
 

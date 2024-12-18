@@ -17,7 +17,7 @@ function App() {
   }, []); // Run once on component mount
 
   return (
-    <div className='app'>
+    <div className='app flex flex-col items-center'>
       <div className='navbar flex justify-between'>
         <div className='xs:mx-5 mx-2 w-[30vw] font-bold'>
           <Link to='/'><p>Gracias 19</p></Link>

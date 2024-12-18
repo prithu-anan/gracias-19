@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router'
+import { login } from '../api-helpers';
 
 const Login = ({ setIsLoggedIn }) => {
 	const navigate = useNavigate()
@@ -9,10 +10,11 @@ const Login = ({ setIsLoggedIn }) => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Simulating a successful login
-    localStorage.setItem('username', username);
-    setIsLoggedIn(true); // Update state immediately
-    navigate('/puzzle');
+    login({ username, password }).then((res) => {
+        localStorage.setItem('username', username);
+        setIsLoggedIn(true);
+        navigate('/puzzle');
+    })
   };
 
   return (
